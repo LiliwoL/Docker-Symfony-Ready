@@ -1,4 +1,7 @@
 .idea
 .DS_Store
 .env
-DockerMariaDB/dbdata
+
+DATA
+Backend
+log
