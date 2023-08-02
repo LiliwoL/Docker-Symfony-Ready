@@ -76,9 +76,9 @@ RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -
 #RUN docker-php-ext-enable xdebug
 
 # Configuring system
-ADD /DockerContainersConfig/.docker/config/php.ini /usr/local/etc/php/php.ini
-ADD /DockerContainersConfig/.docker/config/custom-xdebug.ini /usr/local/etc/php/conf.d/custom-xdebug.ini
-COPY /DockerContainersConfig/.docker/users/* /var/www/
+ADD /DockerContainersConfig/config/php.ini /usr/local/etc/php/php.ini
+ADD /DockerContainersConfig/config/custom-xdebug.ini /usr/local/etc/php/conf.d/custom-xdebug.ini
+COPY /DockerContainersConfig/users/* /var/www/
 RUN chmod +x /usr/local/bin/*
 
 # Permissions / Shell par défaut / Activation de modules apache
