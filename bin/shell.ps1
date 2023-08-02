@@ -1,1 +1,1 @@
-docker-compose exec --user www-data apache zsh
+docker-compose exec apache /usr/bin/zsh
