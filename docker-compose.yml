@@ -46,8 +46,8 @@ services:
       - MARIADB_DATABASE=formation
       - MARIADB_USER=formation
       - MARIADB_PASSWORD=formati0N
-    volumes:
-      - './DATA:/var/lib/mysql'
+    #volumes:
+      #- './DATA:/var/lib/mysql'
     networks:
       - -docker-web
 
