@@ -1,4 +1,4 @@
-# Symfony Cine
+# Docker pour Symfony
 
 
 ## Installation de Symfony
