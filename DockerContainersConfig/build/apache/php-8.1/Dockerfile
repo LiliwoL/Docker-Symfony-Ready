@@ -49,7 +49,7 @@ RUN apt-get update \
 # Installation de Mongo DB
 RUN pecl install mongodb
 
-# Extensions PHP
+# Extensions PHP à installer
 RUN docker-php-ext-configure \
   	gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/; \
   	docker-php-ext-install \

@@ -20,8 +20,10 @@ services:
       # Le dossier Backend contiendra l'application PHP
       - './Backend:/var/www/html'
       - './Backend/.composer/cache:/var/www/.composer/cache'
+
       # Le dossier log contiendra les logs du container
       - './log:/var/log'
+
       # Configuration des vhosts
       - './DockerContainersConfig/vhosts:/etc/apache2/sites-enabled'
     environment:
@@ -60,8 +62,8 @@ services:
     environment:
       - PMA_HOST=db
       - PMA_PORT=3306
-      - PMA_USER=formation
-      - PMA_PASSWORD=formati0N
+      - PMA_USER=root
+      - PMA_PASSWORD=root
     ports:
       - 8081:80
     networks:
